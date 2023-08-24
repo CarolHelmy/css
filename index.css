@@ -1,0 +1,249 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+header#header {
+    background-color: wheat;
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.17);
+    padding: 40px;
+    color: rgb(109, 49, 49);
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 400px;
+    font-size: 25px;
+}
+header ul a {
+    text-decoration: none;
+    color: rgb(109, 49, 49);
+    transition: all 0.5s;
+}
+header ul a:hover {
+    letter-spacing: 3px;
+}
+main#mainSec {
+    margin: 2rem;
+}
+main#mainSec {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: wheat;
+    width: 80px;
+    padding: 10px 10px;
+    color: rgb(109, 49, 49);
+    transition: all 0.5s;
+
+}
+main#mainSec>h3 {
+    position: relative;
+}
+main#mainSec h3::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: wheat;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50%;
+    transition: all 0.5s;
+}
+main#mainSec h3::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: wheat;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50%;
+    transition: all 0.5s;
+}
+main#mainSec h3:hover::after {
+    right: -15%;
+    background-color: rgb(109, 49, 49);
+}
+main#mainSec h3:hover::before {
+    left: -15%;
+    background-color: rgb(109, 49, 49);
+}
+main#mainSec:hover {
+    border-radius: 15px;
+}
+main .container {
+    display: flex;
+    margin: 20px auto;
+}
+main .container .right {
+    flex: 1;
+}
+main .container .left {
+    flex: 1;
+}
+main .container .left :is(h3, h4) {
+    font-size: 2.5rem;
+    margin: 10px 0px;
+}
+main .container .left h4 {
+    color: rgb(170, 142, 89);
+}
+main .container .left h3 {
+    color:  rgb(109, 49, 49);
+}
+main .container .left p {
+    color:  rgb(119, 107, 85);
+}
+main .container .left button {
+    color: rgb(109, 49, 49);
+    border: 2px solid rgb(109, 49, 49);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin: 20px 0px;
+    background-color: transparent;
+}
+main .container .left button a {
+    text-decoration: none;
+    color: rgb(109, 49, 49);
+}
+main .container .left button:hover {
+    color: wheat;
+    background-color: rgb(109, 49, 49);
+}
+main .container .left button a:hover {
+    color: wheat;
+}
+div .headingSec {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: wheat;
+    width: 80px;
+    padding: 10px 10px;
+    color: rgb(109, 49, 49);
+    transition: all 0.5s;
+    position: relative;
+
+}
+div .headingSec::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: wheat;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20%;
+    transition: all 0.5s;
+}
+div .headingSec::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: wheat;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20%;
+    transition: all 0.5s;
+}
+div .headingSec:hover::after {
+    right: 5%;
+    background-color: rgb(109, 49, 49);
+}
+div .headingSec:hover::before {
+    left: 5%;
+    background-color: rgb(109, 49, 49);
+}
+div .headingSec:hover {
+    border-radius: 15px;
+}
+.sec2 {
+    background-color: wheat;
+    padding: 10px 60px;
+}
+.sec2 h3 {
+    color: rgb(109, 49, 49);
+    font-size: 2rem;
+}
+.sec2 p {
+    color: rgb(119, 107, 85);
+}
+main .secs1 {
+    display: flex;
+    margin: 10px 30px;
+    height: 500px;
+}
+main .secs1 img {
+    width: 70%;
+    margin: 10px 30px;
+}
+main .secs1 .right {
+    flex: 1;
+    margin: 0% 10px;
+    box-shadow: 3px 2px  rgba(0, 0, 0, 0.17);
+}
+main .secs1 .left {
+    flex: 1;
+    margin: 0% 10px;
+    box-shadow: 3px 2px  rgba(0, 0, 0, 0.17);
+}
+main .secs1 .middle {
+    flex: 1;
+    margin: 0% 10px;
+    box-shadow: 3px 2px  rgba(0, 0, 0, 0.17);
+}
+main .secs1 :is(.right, .middle, .left) h4 {
+    color: rgb(109, 49, 49);
+    font-size: 30px;
+    margin: 0px 30px;
+}
+main .secs1 :is(.right, .middle, .left) p {
+    color: rgb(119, 107, 85);
+}
+main .secs1 :is(.right, .middle, .left) a {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 3px 5px;
+    color: rgb(109, 49, 49);
+    border: 2px solid rgb(109, 49, 49) ; 
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 20px 0px 0px 270px;
+}
+footer .brown {
+    color: rgb(109, 49, 49);
+}
+footer {
+    padding: 10px 60px;
+    background-color: rgb(119, 107, 85);
+    color: wheat;
+}
